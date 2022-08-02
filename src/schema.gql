@@ -1,0 +1,17 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type WeatherDescription {
+  description: String!
+}
+
+type Query {
+  weatherDescription(weatherQueryParams: WeatherQueryDto!): WeatherDescription!
+}
+
+input WeatherQueryDto {
+  lat: String!
+  lon: String!
+  date: String!
+}
