@@ -8,7 +8,7 @@ export class WeatherResolver {
   constructor(private readonly weatherService: WeatherService) {}
 
   @Query((returns) => WeatherDescription)
-  async weatherDescription(
+  async getWeatherDescription(
     @Args('weatherQueryParams') query: WeatherQueryDto,
   ): Promise<WeatherDescription> {
     return await this.weatherService.getWeatherDescription(query);

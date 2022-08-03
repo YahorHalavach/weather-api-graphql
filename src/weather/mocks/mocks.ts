@@ -136,25 +136,25 @@ export const day7Description: WeatherDescription = {
 
 // E2E response bodies
 export const day1ResponseBody = {
-  data: { weatherDescription: { description: 'light rain' } },
+  data: { getWeatherDescription: { description: 'light rain' } },
 };
 
 export const day2ResponseBody = {
-  data: { weatherDescription: { description: 'cloudy' } },
+  data: { getWeatherDescription: { description: 'cloudy' } },
 };
 
 export const day6ResponseBody = {
-  data: { weatherDescription: { description: 'storm' } },
+  data: { getWeatherDescription: { description: 'storm' } },
 };
 
 export const day7ResponseBody = {
-  data: { weatherDescription: { description: 'strong wind' } },
+  data: { getWeatherDescription: { description: 'strong wind' } },
 };
 
 // E2E GQL Query
 export const gqlQuery = (lat: string, lon: string, date: string) => `
    {
-    weatherDescription(weatherQueryParams: {
+    getWeatherDescription(weatherQueryParams: {
       lat: "${lat}",
       lon: "${lon}",
       date: "${date}"

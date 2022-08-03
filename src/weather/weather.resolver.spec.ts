@@ -28,7 +28,7 @@ describe('WeatherResolver', () => {
   });
 
   it('Should return weather description', async () => {
-    expect(await weatherResolver.weatherDescription(mockQuery)).toEqual(
+    expect(await weatherResolver.getWeatherDescription(mockQuery)).toEqual(
       day1Description,
     );
   });

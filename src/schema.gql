@@ -7,7 +7,7 @@ type WeatherDescription {
 }
 
 type Query {
-  weatherDescription(weatherQueryParams: WeatherQueryDto!): WeatherDescription!
+  getWeatherDescription(weatherQueryParams: WeatherQueryDto!): WeatherDescription!
 }
 
 input WeatherQueryDto {
