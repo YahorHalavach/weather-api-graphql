@@ -2,7 +2,7 @@ import { HttpService } from '@nestjs/axios';
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { lastValueFrom, map, Observable } from 'rxjs';
 import { WEATHER_API_URL } from './constants/urls';
-import { WeatherDescription } from './models/weather-description.model';
+import { WeatherDescription } from './dto/weather-description.dto';
 import { OpenWeather } from './interface/open-weather.interface';
 import getFromToDates from './helpers/getFromToDates';
 import mapWeatherData from './mappers/weather.mapper';

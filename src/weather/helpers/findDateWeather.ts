@@ -1,5 +1,5 @@
-import { WeatherDescription } from '../models/weather-description.model';
-import { Weather } from '../models/weather.model';
+import { WeatherDescription } from '../dto/weather-description.dto';
+import { Weather } from '../mappers/weather.map';
 
 export default (weatherMap: Weather[], now: number) => {
   let n = -1;

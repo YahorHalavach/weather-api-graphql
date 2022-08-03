@@ -1,6 +1,6 @@
 import { Resolver, Query, Args } from '@nestjs/graphql';
 import { WeatherQueryDto } from './dto/weather-query.dto';
-import { WeatherDescription } from './models/weather-description.model';
+import { WeatherDescription } from './dto/weather-description.dto';
 import { WeatherService } from './weather.service';
 
 @Resolver((of) => WeatherDescription)
